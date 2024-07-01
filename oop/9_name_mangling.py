@@ -1,4 +1,5 @@
-# name mangling использование двух нижних подчеркиваний для скрытых переменных, для избежания случайного повторного переопределения
+# name mangling использование двух нижних подчеркиваний для скрытых переменных, для избежания случайного повторного
+# переопределения
 
 from datetime import datetime
 import pytz
@@ -6,6 +7,8 @@ import pytz
 WHITE = '\033[00m'
 GREEN = '\033[0;92m'
 RED = '\033[1;31m'
+
+
 class Account:
     def __init__(self, name, balance):
         self.name = name
@@ -46,7 +49,6 @@ class Account:
 
 
 a = Account("Oleg", 0)
-
 
 a.deposit(122)
 a.deposit(12)

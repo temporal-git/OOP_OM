@@ -1,5 +1,4 @@
 
-
 class Person:
     name = "Dima"
     @classmethod # декоратор @classmethod, получает сам класс как обьект.

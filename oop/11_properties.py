@@ -18,16 +18,16 @@ class Person:
 
     def set_name(self, value):
         print("From set_name()")
-        self._name =  value
+        self._name = value
 
-    name = property(fget=get_name, fset=set_name) # внутри нашего класса Person создадим переменную name которая будет экземпляром класса Property
+    name = property(fget=get_name,
+                    fset=set_name)  # внутри нашего класса Person создадим переменную name которая будет экземпляром класса Property
     # и переменная name становится свойством, атрибутом класса
     # класс Property имеет два параметра fget= чтение свойства и fset= устанавливает приватное свойство.
     # Name станвоистя свойством класса и его не будет в пространстве имен.
 
 
 p = Person("Dima")
-
 
 print(p.__dict__)
 print(p.name)
